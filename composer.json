@@ -1,0 +1,20 @@
+{
+  "name": "et-soft/yii2-widget-select-year",
+  "description": "Widget for Yii2, created selectbox field with years",
+  "keywords": ["yii2", "extension", "widget", "form"],
+  "homepage": "https://github.com/et-soft/yii2-widget-select-year",
+  "type": "yii2-extension",
+  "license": "BSD 3-Clause",
+  "authors": [
+    {
+      "name": "Evgeny Titov",
+      "email": "etsoft2015@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "etsoft\\widgets\\": ""
+    }
+  }
+}

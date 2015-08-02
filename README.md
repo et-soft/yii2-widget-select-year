@@ -12,7 +12,7 @@ For example,
 ?>
 ```
 
-shows selectbox with values from 2015 to 1995 year.
+shows selectbox with values from 2015 (current year) to 1995 year.
 
 ### Install
 
