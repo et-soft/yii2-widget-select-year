@@ -13,3 +13,19 @@ For example,
 ```
 
 shows selectbox with values from 2015 to 1995 year.
+
+### Install
+
+Either run
+
+```
+$ php composer.phar require et-soft/yii2-widget-select-year "*"
+```
+
+or add
+
+```
+"et-soft/yii2-widget-select-year": "*"
+```
+
+to the ```require``` section of your `composer.json` file.
