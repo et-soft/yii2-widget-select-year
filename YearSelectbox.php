@@ -15,7 +15,7 @@ use yii\widgets\InputWidget;
  * For example,
  *
  * ```php
- * <?php echo $form->field($model, 'year')->widget(app\components\YearSelectbox::classname(), [
+ * <?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
  *     'yearStart' => 0,
  *     'yearEnd' => -20,
  * ]);
