@@ -8,40 +8,6 @@
 
 Widget for Yii2, created selectbox field with years.
 
-For example,
-
-```php
-<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
-    'yearStart' => 0,
-    'yearEnd' => -20,
- ]);
-?>
-```
-
-shows selectbox with values from 2015 (current year) to 1995 year.
-
-```php
-<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
-    'yearStart' => -10,
-    'yearEnd' => 10,
- ]);
-?>
-```
-
-shows selectbox with values from 2005 (current year - 10 years) to 2025 year (+ 10 years from current year).
-
-```php
-<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
-    'yearStart' => 2000,
-    'yearStartType' => 'fix',
-    'yearEnd' => 2010,
-    'yearEndType' => 'fix',
- ]);
-?>
-```
-
-shows selectbox with fix values from 2000 to 2010 years.
-
 ### Install
 
 Either run
@@ -57,3 +23,38 @@ or add
 ```
 
 to the ```require``` section of your `composer.json` file.
+
+### Examples
+
+
+Show selectbox with values from 2015 (current year) to 1995 year (-20 years from current year):
+
+```php
+<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
+    'yearStart' => 0,
+    'yearEnd' => -20,
+ ]);
+?>
+```
+
+Show selectbox with values from 2005 (current year - 10 years) to 2025 year (+ 10 years from current year):
+
+```php
+<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
+    'yearStart' => -10,
+    'yearEnd' => 10,
+ ]);
+?>
+```
+
+Show selectbox with fix values from 2000 to 2010 years:
+
+```php
+<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
+    'yearStart' => 2000,
+    'yearStartType' => 'fix',
+    'yearEnd' => 2010,
+    'yearEndType' => 'fix',
+ ]);
+?>
+```
