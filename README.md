@@ -47,7 +47,7 @@ Show selectbox with values from 2005 (current year - 10 years) to 2025 year (+ 1
 ?>
 ```
 
-Show selectbox with fix values from 2000 to 2010 years:
+Show selectbox with fix values from 2000 to 2010 year:
 
 ```php
 <?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
@@ -55,6 +55,18 @@ Show selectbox with fix values from 2000 to 2010 years:
     'yearStartType' => 'fix',
     'yearEnd' => 2010,
     'yearEndType' => 'fix',
+ ]);
+?>
+```
+
+
+Show selectbox with values from 2000 to current year:
+
+```php
+<?php echo $form->field($model, 'year')->widget(etsoft\widgets\YearSelectbox::classname(), [
+    'yearStart' => 2000,
+    'yearStartType' => 'fix',
+    'yearEnd' => 0,
  ]);
 ?>
 ```
